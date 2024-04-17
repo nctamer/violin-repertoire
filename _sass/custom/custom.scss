@@ -2,15 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .sample-video {
-    border: 10px solid #ffffff;
-    border-radius: 50px;
-    padding: 5px;
+    border: 0px solid #ffffff00;
+    border-radius: 30px;
+    padding: 0px;
     margin-bottom: 0px;
-    background: linear-gradient(to right, #191722, #231d1a);
-    color: white;
+    flex: 1 0 100%;  // Use the entire width on small screens
+    background: linear-gradient(to bottom right, #d4ff0015, #ff4d0014, #006aff09);
+    box-shadow: 2px 8px 12px 2px rgba(0, 0, 0, 0.2);  // Add this line
 }
 
 .sample-video table {
@@ -18,7 +20,6 @@
     text-align: center;
     margin: 0 auto 0; /* Center the table */
     background: transparent; /* Remove table background */
-    color: white; /* Make table text white */
     padding: 0px; /* Reduce cell padding */
     font-size: 0.8em; /* Reduce font size */
     margin-bottom: 0; /* Remove bottom margin */
@@ -38,7 +39,6 @@
 .sample-header h2 {
     margin-top: 4px; /* Remove top margin */
     margin-bottom: 4px; /* Remove top margin */
-    color: white; /* Make header text white */
 }
 
 .sample-content {
@@ -55,8 +55,8 @@
     height: 100%;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
     .sample-video {
-        flex: 1 0 calc(50% - 10px);
+        flex: 1 0 calc(50% - 5px);
     }
 }
