@@ -1,6 +1,6 @@
 title: Violin Repertoire
 description: A live dataset of violin repertoire for the community!
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 color_scheme: copper
 
