@@ -1,0 +1,33 @@
+<div class="sample-video">
+    <div class="sample-header">
+        <h2>{{ include.player }}</h2>
+    </div>
+    <div class="sample-content">
+        <iframe 
+        src="https://www.youtube.com/embed/{{ include.id }}{% if include.start %}?start={{ include.start }}{% endif %}{% if include.end %}&end={{ include.end }}{% endif %}" 
+        frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    <table>
+        <tr>
+            <th>Player</th>
+            <td>{{ include.player }}</td>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <td>{{ include.id }}</td>
+        </tr>
+        {% if include.start %}
+        <tr>
+            <th>Start (s)</th>
+            <td>{{ include.start }}</td>
+        </tr>
+        {% endif %}
+        {% if include.end %}
+        <tr>
+            <th>End (s)</th>
+            <td>{{ include.end }}</td>
+        </tr>
+        {% endif %}
+    </table>
+</div>

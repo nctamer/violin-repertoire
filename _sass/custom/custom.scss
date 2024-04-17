@@ -1,0 +1,62 @@
+.sample-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sample-video {
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    padding: 5px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #191722, #231d1a);
+    color: white;
+}
+
+.sample-video table {
+    width: 50%; /* Reduce table width */
+    text-align: center;
+    margin: 0 auto 0; /* Center the table */
+    background: transparent; /* Remove table background */
+    color: white; /* Make table text white */
+    padding: 0px; /* Reduce cell padding */
+    font-size: 0.8em; /* Reduce font size */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.sample-video table th, .sample-video table td {
+    background: transparent; /* Make table cell backgrounds transparent */
+    padding: 2px; /* Reduce cell padding */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
+.sample-header {
+    text-align: center;
+}
+
+.sample-header h2 {
+    margin-top: 4px; /* Remove top margin */
+    margin-bottom: 4px; /* Remove top margin */
+    color: white; /* Make header text white */
+}
+
+.sample-content {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.sample-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 400px) {
+    .sample-video {
+        flex: 1 0 calc(50% - 10px);
+    }
+}
