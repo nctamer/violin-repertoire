@@ -1,7 +1,7 @@
 ---
 layout: default
 grand_parent: Etudes
-parent: Rode Op. 22
+parent: Rode
 title: Rode Op. 22 No. 1
 nav_order: 1
 ---
